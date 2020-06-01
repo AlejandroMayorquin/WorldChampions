@@ -15,12 +15,15 @@ class Clasificacion extends React.Component {
     var db = firebase.firestore();
     db.collection("equipos").get().then((querySnapshot) => {
 
-      console.log("querySnap",querySnapshot);
+      console.log("querySnap", querySnapshot);
       let equipos = [];
       querySnapshot.forEach((doc) => {
         let equipo = doc.data()
         equipos.push(equipo)
       })
+      equipos.sort((a, b) =>
+        b.PTS - a.PTS
+      );
       this.setState({ equipos })
     });
   }

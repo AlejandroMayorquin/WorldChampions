@@ -2,9 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Typography from '@material-ui/core/Typography';
-import Dialog from './Dialog';
+import Barcelona from './Barcelona';
 import Realmadrid from './Realmadrid';
-import Dialog3 from './Dialog';
+import Mcunited from './Mcunited';
 
 const images = [
   {
@@ -153,13 +153,13 @@ export default function ButtonBases() {
 
       <switch>
         <Route path="/BARCELONA">
-          <Dialog open={open} />
+          <Barcelona />
         </Route>
         <Route path="/REALMADRID">
           <Realmadrid />
         </Route>
         <Route path="/MCUNITED">
-          <Dialog3 open={open} />
+          <Mcunited />
         </Route>
       </switch>
 
