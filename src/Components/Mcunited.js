@@ -73,7 +73,8 @@ export default function ButtonAppBar() {
                                     un total de 20 titulos, tambien es el unico equipo en ser
                                     pentacampeon en los años (1995-2000) tambien
                                     siendo tricampeon en los años (2002-2005) y varias veces
-                                    Bicampeon de la competicion.----------------
+                                    Bicampeon de la competicion. tiene como maximo rival 
+                                    el Manchester City----------------
                                     |DK|
           </Typography>
                             </CardContent>

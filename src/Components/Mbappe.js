@@ -36,7 +36,7 @@ export default function ButtonAppBar() {
                 <ReactPlayer url='https://www.youtube.com/watch?v=QORAifg9Sxc' playing />
                 </Grid>
                 <Grid item xs={6}>
-                <ReactPlayer url='https://www.youtube.com/watch?v=EsLFEmlJnAk' playing />
+                <ReactPlayer url='https://www.youtube.com/watch?v=EsLFEmlJnAk' playing controls muted/>
                 </Grid>
             </Grid>
 
