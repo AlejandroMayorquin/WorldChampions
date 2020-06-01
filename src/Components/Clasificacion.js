@@ -14,14 +14,14 @@ class Clasificacion extends React.Component {
 
     var db = firebase.firestore();
     db.collection("equipos").get().then((querySnapshot) => {
+
+      console.log("querySnap",querySnapshot);
       let equipos = [];
       querySnapshot.forEach((doc) => {
-        console.log(doc);
         let equipo = doc.data()
         equipos.push(equipo)
       })
       this.setState({ equipos })
-      this.getEquipos()
     });
   }
 
