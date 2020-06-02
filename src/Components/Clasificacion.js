@@ -14,7 +14,6 @@ class Clasificacion extends React.Component {
 
     var db = firebase.firestore();
     db.collection("equipos").get().then((querySnapshot) => {
-
       console.log("querySnap", querySnapshot);
       let equipos = [];
       querySnapshot.forEach((doc) => {
